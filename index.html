@@ -1,42 +1,60 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
-   <head>
+<head>
+   <meta charset="utf-8">
+   <title>Blackjack</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" charset="utf-8" defer></script>
+</head>
 
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<body>
+   <div id="content" class="content">
+      <div id "left" class="left">
+         <div id="gameArea" class="gameArea">
+            <div id="dealerSection" class="dealerSection">
+               <h2>Dealer</h2>
+               <div id=dealerCards class="dealerCards"></div>
+               <div id=d ealerScoreContainer class="Score">
+                  <span>Dealer Score: </span><span> id="dealerScore"</span>
+                  <span> id="dealerResult" class="result"</span>
 
+               </div>
 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="stylesheet" href="style.css">
-      <script src="script.js" charset="utf-8"></script>
+            </div>
+            <div id="userSection" class="userSection">
+               <h2>Player</h2>
+               <div id="userCards" class="userCards"></div>
+               <div id=userScoreContainer class="score">
+                  <span>Player Score: </span><span> id="userScore"</span>
+                  <span> id="userResult" class="result"</span>
 
-      <title>***Blackjack***</title>
-   </head>
+               </div>
 
-   <body>
-      <h1>Blackjack</h1>
+            </div>
 
-      <div class="container-fluid">
-
-         <div class="row">
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
          </div>
-         <div class="row">
-            <div class="col-8">col-8</div>
-            <div class="col-4">col-4</div>
-         </div>
-
-
-
 
       </div>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-   </body>
+      <div id="right">
+         <div id="controls">
+            <div id="buttonContainer">
+               <button id="deal">Deal</button>
+               <button id="hit">Hit</button>
+               <button id="stay">Stay</button>
+               <button id="again">Again</button>
+
+            </div>
+            <div id="roundResultContainer">
+               <span id="roundResult"></span>
+
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+
+</body>
 
 </html>
